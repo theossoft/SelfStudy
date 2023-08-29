@@ -9,6 +9,7 @@ public class View {
         System.out.println("3. Умножение");
         System.out.println("4. Деление");
         System.out.println("5. Выход");
+        System.out.print("Ваш выбор: ");
     }
 
     public static void print(double resultProcess){

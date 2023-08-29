@@ -13,16 +13,16 @@ public class Processor {
         if(i == 5) {
             System.exit(0);
         }
-        System.out.println("Введите первое число");
+        System.out.println("Введите первое число:");
         double first = scanner.nextDouble();
-        System.out.println("Введите второе число");
+        System.out.println("Введите второе число:");
         double second = scanner.nextDouble();
         return switch (i) {
             case 1 -> service.sum(first, second);
             case 2 -> service.minus(first, second);
             case 3 -> service.multiply(first, second);
-            case 4 -> service.devision(first, second);
-            default -> throw new IllegalStateException("Unexpected value: " + i);
+            case 4 -> service.division(first, second);
+            default -> throw new IllegalStateException("Параметра " + i + " не существует!");
         };
     }
 }
